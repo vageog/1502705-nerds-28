@@ -30,12 +30,30 @@
     </header>
     <main>
         <h1>Магазин готовых шаблонов</h1>
-        <section>
+        <section class="filters">
             <h2>Фильтр товаров</h2>
-           <!-- Здесь будет форма фильтра -->
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                </fieldset>
+                <button class="button-show">Показать</button>
         </section>
 
-        <article>
+        <article class="catalog">
+            <fieldset>
+                <legend>Сортировать:</legend>
+                <a href="#" class="sort-up">
+                    <img src="img/icon-up-dir.svg" width="11" height="10" alt="По убыванию">
+                </a>
+                <a href="#" class="sort-down">
+                    <img src="img/icon-down-dir.svg" width="11" height="10" alt="По возрастанию">
+                </a>
+            </fieldset>
             <h2>Каталог макетов</h2>
             <ul>
                 <li>
@@ -80,10 +98,31 @@
                 </article> 
                 </li>
             </ul>
+            <a class="pagination">1</a>
+            <a href="#" class="pagination">2</a>
+            <a href="#" class="pagination">3</a>
+            <a href="#" class="pagination">Следующая</a>
         </article>
     </main>
 
     <footer class="main-footer">
+        <section>
+            <h2 class="visually-hidden">Как найти нас</h2>
+            <img src="img/map.png" width="1440" height="416" alt="Как нас найти">
+            <img src="img/map-marker.png" width="231" height="190" alt="Мы тут">
+            <div class="address-badge">
+            <p>
+              <span>NЁRDS DESIGN STUDIO</span>
+            </p>
+            <p>
+              191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+            <button class="button">Напишите нам</button>
+          </div>
+          </section>
         <ul>
           <li>
             <a href="#">
