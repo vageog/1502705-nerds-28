@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav>
-        <a class="main-header-logo">
+        <a href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
         </a>
         <ul>
@@ -20,7 +20,7 @@
         </ul>
         <div class="basket">
             <a href="#">
-              <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+              <img src="img/cart-icon.svg" width="15" height="15" alt="Перейти в корзину">
               <p>
                   Корзина
               </p>
@@ -32,28 +32,84 @@
         <h1>Магазин готовых шаблонов</h1>
         <section class="filters">
             <h2>Фильтр товаров</h2>
+            <form action="https://echo.htmlacademy.ru/courses" method="GET">
                 <fieldset>
                     <legend>Стоимость:</legend>
+                    <input type="range" min="0" max="15000">
+                    <label>
+                        <span>От</span>
+                        <input type="number" value="0">
+                    </label>
+                    <label>
+                        <span>До</span>
+                        <input type="number" value="15000">
+                    </label>
                 </fieldset>
                 <fieldset>
                     <legend>Сетка:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                            <input type="radio" name="grid" value="Adaptive" checked>Адаптивная
+                            </label>
+                        </li>
+                         <li>
+                            <label>
+                                <input type="radio" name="grid" value="Fixed">Фиксированная
+                            </label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Особенности:</legend>
+                    <ul>
+                        <li>
+                            <label>
+                            <input type="checkbox" name="slider" checked>Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Advantages">Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="News" checked>Новости
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="checkbox" name="Gallery">Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="Basket">Корзина
+                            </label>
+                        </li>
+                    </ul>
                 </fieldset>
-                <a class="button-show">Показать</a>
+                <button type="button">Показать</button>
+            </form>
         </section>
-
+        <section>
+            <h2 class="visually-hidden">Сортировка товаров</h2>
+        <fieldset>
+            <legend>Сортировать:</legend>
+            <button type="button">По цене</button>
+            <button type="button">По типу</button>
+            <button type="button">По названию</button>
+            <a href="#" class="sort-up">
+                <img src="img/icon-up-dir.svg" width="11" height="10" alt="По убыванию">
+            </a>
+            <a href="#" class="sort-down">
+                <img src="img/icon-down-dir.svg" width="11" height="10" alt="По возрастанию">
+            </a>
+        </fieldset>
+        </section>
         <article class="catalog">
-            <fieldset>
-                <legend>Сортировать:</legend>
-                <a href="#" class="sort-up">
-                    <img src="img/icon-up-dir.svg" width="11" height="10" alt="По убыванию">
-                </a>
-                <a href="#" class="sort-down">
-                    <img src="img/icon-down-dir.svg" width="11" height="10" alt="По возрастанию">
-                </a>
-            </fieldset>
+            
             <h2>Каталог макетов</h2>
             <ul>
                 <li>
@@ -104,11 +160,33 @@
             <a href="#" class="pagination">Следующая</a>
         </article>
     </main>
+    <section>
+        <h2>Напишите нам</h2>
+        <button type="button"><img src="img/close-cross.svg" width="21" height="21" alt="Закрыть окно обратной связи"></button>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset>
+        <label>
+          Ваше имя: 
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Ваш email:
+          <input type="email" name="email" placeholder="email@example.com">
+        </label>
+        <label>
+          Текст письма:
+          <textarea name="text" id="contact-text" rows="5" placeholder="В свободной форме">
+          </textarea>
+        </label>
+        <button type="submit">Отправить</button>
+          </fieldset>  
+      </form>
+      </section>
 
     <footer class="main-footer">
         <section>
             <h2 class="visually-hidden">Как найти нас</h2>
-            <img src="img/map.png" width="1440" height="416" alt="Как нас найти">
+            <img src="img/map.png" width="1440" height="416" alt="Карта проезда к нам">
             <img src="img/map-marker.png" width="231" height="190" alt="Мы тут">
             <div class="address-badge">
             <p>
@@ -120,7 +198,7 @@
             <p>
                 тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
             </p>
-            <a class="button">Напишите нам</a>
+            <button type="button">Напишите нам</button>
           </div>
           </section>
         <ul>

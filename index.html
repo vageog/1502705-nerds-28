@@ -20,7 +20,7 @@
         </ul>
         <div class="basket">
             <a href="#">
-              <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+              <img src="img/cart-icon.svg" width="15" height="15" alt="Перейти в корзину">
               <p>
                 Корзина
               </p>
@@ -29,7 +29,7 @@
       </nav>
     </header>
     <main>
-      <h1>Студия дизайна Нёрдс</h1>
+      <h1 class="visually hidden">Студия дизайна Нёрдс</h1>
       <section>
         <h2 class="visually hidden">Наш стиль работы</h2>
         <p>
@@ -42,14 +42,14 @@
            для вашего сайта или мобильного приложения.
         </p>
         <a href="#" class="button">Узнать больше</a>
-        <img src="img/nerds-index-slider.png" width="760" height="431" alt="Дизайн для сайта">
+        <img src="img/nerds-index-slider.png" width="760" height="431" alt="Пример дизайна">
       </section>
 
       <section>
         <h2>Услуги</h2>
         <ul>
           <li>
-              <img src="img/illustration-1-1.png" width="300" height="146" alt="Веб-сайты">
+              <img src="img/illustration-1-1.png" width="300" height="146" alt="Делаем веб-сайты">
             <h3>Веб-сайты</h3>
             <p>
               Мир никогда не будет прежним
@@ -58,7 +58,7 @@
             <a class="button">Заказать</a>
           </li>
           <li>
-              <img src="img/illustration-2-1.png" width="300" height="146" alt="Приложения">
+              <img src="img/illustration-2-1.png" width="300" height="146" alt="Делаем приложения">
             <h3>Приложения</h3>
             <p>
              Покорите топ-10 приложений в
@@ -67,7 +67,7 @@
             <a class="button">Заказать</a>
           </li>
           <li>
-              <img src="img/illustration-3-1.png" width="300" height="146" alt="Презентации">
+              <img src="img/illustration-3-1.png" width="300" height="146" alt="Делаем презентации">
             <h3>Презентации</h3>
             <p>
               Вы даже не подозреваете,
@@ -128,22 +128,44 @@
             <img src="img/logo-html-academy.svg" width="199" height="68" alt="HTML Академия">
           </li>
           <li>
-            <img src="img/logo-borodinski.png" width="209" height="90" alt="Borodinski">
+            <img src="img/logo-borodinski.png" width="209" height="90" alt="Бординский">
           </li>
           <li>
-            <img src="img/logo-pink.png" width="185" height="52" alt="Pink">
+            <img src="img/logo-pink.png" width="185" height="52" alt="Пинк">
           </li>
           <li>
-            <img src="img/logo-mishka.png" width="173" height="84" alt="Mishka">
+            <img src="img/logo-mishka.png" width="173" height="84" alt="Мишка">
           </li>
         </ul>
       </section>
     </main>
+    <section>
+      <h2>Напишите нам</h2>
+      <button type="button"><img src="img/close-cross.svg" width="21" height="21" alt="Закрыть окно обратной связи"></button>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+      <label>
+        Ваше имя: 
+        <input type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label>
+        Ваш email:
+        <input type="email" name="email" placeholder="email@example.com">
+      </label>
+      <label>
+        Текст письма:
+        <textarea name="text" id="contact-text" rows="5" placeholder="В свободной форме">
+        </textarea>
+      </label>
+      <button type="submit"><span class="button">Отправить</span></button>
+        </fieldset>  
+    </form>
+    </section>
 
     <footer class="main-footer">
       <section>
         <h2 class="visually-hidden">Как найти нас</h2>
-        <img src="img/map.png" width="1440" height="416" alt="Как нас найти">
+        <img src="img/map.png" width="1440" height="416" alt="Карта проезда к нам">
         <img src="img/map-marker.png" width="231" height="190" alt="Мы тут">
         <div class="address-badge">
         <p>
@@ -155,7 +177,7 @@
         <p>
           тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
         </p>
-        <a class="button">Напишите нам</a>
+        <button type="button">Напишите нам</button>
       </div>
       </section>
       <ul>
