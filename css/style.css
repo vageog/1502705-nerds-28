@@ -199,7 +199,7 @@ body {
 
 /* Main Slider */
 
-.tagline-one span {
+span.tagline-one {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
