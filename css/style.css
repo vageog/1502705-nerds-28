@@ -277,7 +277,7 @@ span.tagline-one {
 
 
 /* Portfolio start */
-.portfolio ul {
+.portfolio .portfolio-list {
     list-style: none;
     margin:0; padding: 0
 }
@@ -359,7 +359,7 @@ span.tagline-one {
     text-transform: uppercase;
     background-color: var(--basic-white);
     border: none;
-    color: var(--basic-white-opacity-03);
+    opacity: 0.3;
     cursor: pointer;
 }
 
