@@ -25,11 +25,15 @@
     --border-invalid: #E74246;
     --button-gray-hover: #DFDFDF;
     --button-gray-active: #D5D5D5;
+    --basic-black-opacity-03: rgba(0, 0, 0, 0.3);
+    --basic-white-opacity-03: rgba(255, 255, 255, 0.3);
+    --basic-black-opacity-06: rgba(0, 0, 0, 0.6);
 }
 
-/* Global */
+
+/* Global Start */
 body {
-    min-width: 1440px;
+    min-width: 1160px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -49,9 +53,10 @@ body {
     max-width: 100%;
     height: auto;
   }
+/* Global end */
 
-/* Buttons */
 
+  /* Buttons start */
 .button {
     font: inherit;
     text-align: center;
@@ -65,8 +70,7 @@ body {
 }
 
 
-/* Red Color */
-
+/* Red Color Button */
 .button.red {
     background-color: var(--basic-red-light);
     text-transform: uppercase;
@@ -83,11 +87,11 @@ body {
     background-color: var(--basic-red-extra);
     text-transform: uppercase;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.3)
+    color: var(--basic-white-opacity-03);
 }
 
-/* Green Color */
 
+/* Green Color Button */
 .button.green {
     background-color: var(--basic-green-light);
     text-transform: uppercase;
@@ -104,11 +108,11 @@ body {
     background-color: var(--basic-green-extra);
     text-transform: uppercase;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--basic-white-opacity-03);
 }
 
-/* Yellow Color */
 
+/* Yellow Color Button */
 .button.yellow {
     background-color: var(--basic-yellow-light);
     text-transform: uppercase;
@@ -125,11 +129,11 @@ body {
     background-color: var(--basic-yellow-extra);
     text-transform: uppercase;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--basic-white-opacity-03);
 }
 
-  /* Main navigation */
 
+  /* Main navigation */
   .main-navigation .nerds-logo:active {
     fill: var(--basic-gray);
   }
@@ -147,15 +151,16 @@ body {
 
   .site-navigation {
     list-style: none;
+    margin:0; padding: 0
   }
 
   .site-navigation-current a:not([href]) {
     background-color: var(--basic-gray);
   }
+/* Buttons end */
 
 
-/* Visually-hidden */
-
+/* Visually-hidden start */
   .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -164,8 +169,8 @@ body {
     margin: -1px;
   }
 
-/* Navigation state */
 
+/* Navigation state */
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
@@ -177,10 +182,12 @@ body {
 }
 
 .site-navigation a:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--basic-black-opacity-03);
 }
+/* Visually-hidden end */
 
-/* Basket */
+
+/* Basket start */
 .basket a {
     color: var(--basic-black)
 }
@@ -191,26 +198,25 @@ body {
 }
 
 .basket a:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--basic-black-opacity-03);
 }
+/* Basket end */
 
 
-
-
-/* Main Slider */
-
+/* Main Slider start */
 span.tagline-one {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
     color: var(--basic-black)
 }
+/* Main Slider end */
 
 
-/* Features */
-
+/* Features start */
 .features-list {
     list-style: none;
+    margin:0; padding: 0
   }
   
   .features-item {
@@ -224,18 +230,20 @@ span.tagline-one {
     font-weight: 700;
     color: var(--basic-black)
   }
+  /* Features end */
 
-  /* About us */
 
+  /* About us start */
   .about-us-list {
     list-style: none;
+    margin:0; padding: 0
   }
 
   .about-us span {
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
-  }
+}
 
   .tagline-two {
     font-size: 45px;
@@ -243,9 +251,10 @@ span.tagline-one {
     font-weight: 500;
     color: var(--basic-black)
 }
+/* About us end */
 
-/* About Us numbers */
 
+/* About Us numbers start */
     .about-us-numbers span {
     line-height: 24px;
     font-weight: 700;
@@ -264,11 +273,13 @@ span.tagline-one {
     .about-us-numbers td {
     line-height: 18px;
 }
+/* About us numbers end */
 
-/* Portfolio */
 
+/* Portfolio start */
 .portfolio ul {
     list-style: none;
+    margin:0; padding: 0
 }
 
 .portfolio-item {
@@ -283,12 +294,12 @@ span.tagline-one {
 .portfolio-item:active {
     opacity: 0.1;
 }
+/* Portfolio end */
 
 
-/* Footer */
+/* Footer Start */
 
 /* Map and Badge */
-
 .address-badge span {
     font-size: 18px;
     line-height: 30px;
@@ -302,10 +313,11 @@ span.tagline-one {
     color: var(--additional-gray);
 }
 
-/* Social icons */
 
+/* Social icons */
 .social-icons {
     list-style: none;
+    margin:0; padding: 0;
     background-color: var(--additional-gray-light);
 }
 
@@ -324,7 +336,6 @@ span.tagline-one {
 
 
 /* Discount */
-
 .discount-title {
     font-size: 36px;
     line-height: 36px;
@@ -337,8 +348,8 @@ span.tagline-one {
     color: var(--additional-gray-extra)
 }
 
-/* Modal contact Us */
 
+/* Modal contact Us */
 .contact-us {
     background-color: var(--basic-white);
 }
@@ -348,7 +359,7 @@ span.tagline-one {
     text-transform: uppercase;
     background-color: var(--basic-white);
     border: none;
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--basic-white-opacity-03);
     cursor: pointer;
 }
 
@@ -364,7 +375,6 @@ span.tagline-one {
 .contact-us-window h2 {
     font-size: 45px;
     line-height: 120%;
-
 }
 
 .contact-us-window label {
@@ -400,22 +410,23 @@ span.tagline-one {
     border: 2px solid var(--border-invalid);
     color: var(--border-invalid);
 }
+/* Footer end */
 
 
-/* Catalog */
+/* Catalog Start*/
 
 /* H1 text */
-
 .catalog-h1 {
     font-size: 55px;
     line-height: 55px;
     color: var(--basic-black)
 }
 
-/* Filter on the left side */
 
+/* Filter on the left side start*/
 .filter-left ul {
     list-style: none;
+    margin:0; padding: 0
 }
 
 .filter-left legend {
@@ -486,12 +497,12 @@ span.tagline-one {
 
 .filter-left button:active {
     background-color: var(--button-gray-active);
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--basic-black-opacity-03);
 }
+/* Filter on the left side end */
 
 
-/* Filter horizontal */
-
+/* Filter horizontal start */
 .filter-horizontal legend {
     font-family: inherit;
     font-size: 18px;
@@ -504,7 +515,7 @@ span.tagline-one {
 .filter-horizontal button {
     font: inherit;
     text-align: center;
-    color: rgba(0, 0, 0, 0.3);
+    color: var(--basic-black-opacity-03);
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
@@ -514,11 +525,11 @@ span.tagline-one {
 
 .filter-horizontal button:hover,
 .filter-horizontal button:focus {
-    color: rgba(0, 0, 0, 0.6);
+    color: var(--basic-black-opacity-06);
 }
 
 .filter-horizontal button:active {
-    color: rgba(0, 0, 0, 1);
+    color: var(--basic-black);
 }
 
 .sort-button {
@@ -534,11 +545,13 @@ span.tagline-one {
     fill: var(--basic-dark-extra);
     opacity: 1;
 }
+/* Filter horizontal end */
 
-/* Catalog items list */
 
+/* Catalog items list start */
 .catalog ul {
     list-style: none;
+    margin:0; padding: 0
 }
 
 .btn-price {
@@ -583,5 +596,6 @@ span.tagline-one {
 
 .catalog .pagination:active {
     background-color: var(--button-gray-active);
-    color: rgba(0, 0, 0, 0.3)
+    color: var(--basic-black-opacity-03)
 }
+/* Catalog items list end */
