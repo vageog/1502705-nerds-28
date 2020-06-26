@@ -442,8 +442,9 @@ span.tagline-one {
     width: 360px;
 }
 
-.about-us-numbers img {
+.about-us-numbers-picture {
     width: 360px;
+    margin-bottom: 37px;
 }
 
 .about-us-table:not(span) {
