@@ -451,7 +451,6 @@ span.tagline-one {
     font-size: 26px;
     line-height: 40px;
     font-weight: 700;
-    vertical-align: sub;
 }
 
 .about-us-numbers-tagline {
@@ -462,12 +461,16 @@ span.tagline-one {
     text-align: center;
 }
 
-.about-us-numbers .percent {
+.about-us-numbers .number {
     font-size: 45px;
     line-height: 64px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--basic-black)
+}
+
+.about-us-numbers .percent {
+    vertical-align: 15px;
 }
 
 .about-us-numbers td {
@@ -559,6 +562,12 @@ span.tagline-one {
     padding: 0;
 }
 
+.footer-badge-number a[href] {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
 .footer-badge-container .button {
     padding-left: 44px;
     padding-top: 17px;
@@ -636,6 +645,10 @@ span.tagline-one {
 .social-icons a:active {
     background-color: var(--basic-red-extra);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-icons a:active path {
+    opacity: 0.3;
 }
 
 .social-icons svg:active {
@@ -1014,6 +1027,16 @@ main.container-catalog {
     margin: auto;
 }
 
+.catalog-items-header:hover,
+.catalog-items-header:focus {
+    color: var(--basic-red-light);
+
+}
+
+.catalog-items-header:active {
+    color: var(--basic-black-opacity-03);
+}
+
 .catalog-items-paragraph {
     width: 255px;
     font-size: 16px;
@@ -1024,6 +1047,12 @@ main.container-catalog {
 
 .catalog-items-browser {
     background-image: url("../img/browser.svg");
+    width: 360px;
+    height: 40px;
+}
+
+.catalog-items-browser:hover {
+    background-image: url("../img/browser-hover.svg");
 }
 
 .catalog-items-list .catalog-items-wrapper {
@@ -1097,12 +1126,6 @@ main.container-catalog {
     margin-right: 11px;
 }
 
-.catalog-pagination a:not([href]) {
-
-    background-color: var(--basic-white);
-    border: 3px solid var(--button-gray-active)
-}
-
 .catalog-pagination .pagination-next {
     font: inherit;
     text-align: center;
@@ -1130,5 +1153,12 @@ main.container-catalog {
     background-color: var(--button-gray-active);
     color: var(--basic-black-opacity-03);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.catalog-pagination a:not([href]),
+.catalog-pagination a:not([href]):hover {
+    box-shadow: inset 0px 0px 0px 3px var(--button-gray-active);
+    background-color: var(--basic-white);
+    cursor: default; 
 }
 /* Catalog pagination end */
