@@ -522,9 +522,7 @@ span.tagline-one {
 /* Footer Start */
 /* Map and Badge start */
 .footer-map {
-    width: 1440px;
     height: 440px;
-    position: relative;
     margin-bottom: 68px;
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
@@ -534,9 +532,13 @@ span.tagline-one {
     margin-top: 80px;
 }
 
+.footer-map .container {
+    position: relative;
+}
+
 .footer-badge-container {
     top: 54px;
-    left: 140px;
+    left: 10px;
     position: absolute;
     background-color: var(--basic-white);
     width: 219px;
@@ -595,7 +597,7 @@ span.tagline-one {
     width: 231px;
     height: 190px;
     top: 86px;
-    right: 387px;
+    right: 255px;
 }
 /* Map and Badge end*/
 
@@ -670,8 +672,13 @@ span.tagline-one {
 
 
 /* Modal contact Us */
-.contact-us {
+.contact-us-window {
     background-color: var(--basic-white);
+    width: 960px;
+    padding-top: 63px;
+    padding-left: 100px;
+    padding-bottom: 84px;
+    padding-right: 99px;
 }
 
 .close-button {
@@ -946,7 +953,7 @@ main.container-catalog {
     margin-bottom: 48px;
 }
 
-.catalog-filter-horizontal legend {
+.catalog-filter-horizontal span {
     font-family: inherit;
     font-size: 18px;
     line-height: 30px;
