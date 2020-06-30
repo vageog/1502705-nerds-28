@@ -783,8 +783,6 @@ main.container-catalog {
     margin: 0;
     padding: 0;
     border: none;
-    outline: 5px solid tomato;
-    outline-offset: -5px;
     margin-bottom: 43px;
 }
 
@@ -794,7 +792,7 @@ main.container-catalog {
 }
 
 .catalog-filter-left fieldset:last-of-type {
-    margin-bottom: 48px;
+    margin-bottom: 34px;
 }
 
 .range-filter {
@@ -855,8 +853,6 @@ main.container-catalog {
     list-style: none;
     margin: 0; 
     padding: 0;
-    outline: 5px solid tomato;
-	outline-offset: -5px;
 }
 
 .catalog-filter-left legend {
@@ -926,6 +922,14 @@ main.container-catalog {
     background-color: var(--basic-white);
     margin-left: -36px;
     opacity: 0.4;
+}
+
+.catalog-filter-left .check__box:hover {
+    opacity: 1;
+}
+
+.catalog-filter-left .check__box:disabled {
+    opacity: 0.1;
 }
 
 .catalog-filter-left .check {
@@ -1050,6 +1054,42 @@ main.container-catalog {
     margin-bottom: 55px;
 }
 
+.catalog-items-block img {
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    height: 580px;
+}
+
+.catalog-items-browser {
+    background-image: url("../img/browser.svg");
+    width: 360px;
+    height: 40px;
+}
+
+.catalog-items-list .catalog-items-wrapper {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--basic-gray-light);
+    display: flex;
+    visibility: hidden;
+    padding-left: 52px;
+    padding-top: 26px;
+    padding-right: 53px;
+    padding-bottom: 44px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.catalog-items-block:hover .catalog-items-wrapper {
+    visibility: visible;
+}
+
+.catalog-items-block:hover .catalog-items-browser {
+    background-image: url(../img/browser-hover.svg);
+}
+
 .catalog-items-header {
     font-size: 18px;
     line-height: 30px;
@@ -1075,30 +1115,6 @@ main.container-catalog {
     line-height: 18px;
     color: var(--additional-gray);
     margin-bottom: 32px;
-}
-
-.catalog-items-browser {
-    background-image: url("../img/browser.svg");
-    width: 360px;
-    height: 40px;
-}
-
-.catalog-items-browser:hover {
-    background-image: url("../img/browser-hover.svg");
-}
-
-.catalog-items-list .catalog-items-wrapper {
-    position: absolute;
-    bottom: 0;
-    background-color: var(--basic-gray-light);
-    display: flex;
-    padding-left: 52px;
-    padding-top: 26px;
-    padding-right: 53px;
-    padding-bottom: 44px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .btn-price {
