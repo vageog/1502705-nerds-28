@@ -897,50 +897,6 @@ main.container-catalog {
     border: 2px solid var(--border-focus);
 }
 
-.catalog-filter-left input[type=radio] {
-    cursor: pointer;
-    background-image: url("../img/radio-off.svg");
-}
-
-.catalog-filter-left input[type=radio]:checked {
-    cursor: pointer;
-    background-image: url("../img/radio-on.svg");
-}
-
-.catalog-filter-left input[type=checkbox] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute;
-}
-
-.catalog-filter-left .check__box {
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    background-image: url("../img/checkbox-off.svg");
-    background-color: var(--basic-white);
-    margin-left: -36px;
-    opacity: 0.4;
-}
-
-.catalog-filter-left .check__box:hover {
-    opacity: 1;
-}
-
-.catalog-filter-left .check__box:disabled {
-    opacity: 0.1;
-}
-
-.catalog-filter-left .check {
-    padding-left: 36px;
-}
-
-.catalog-filter-left .option {
-    display: block;
-    margin-bottom: 17px;
-}
-
 .catalog-filter-left button {
     font: inherit;
     font-weight: 500;
@@ -1026,6 +982,82 @@ main.container-catalog {
 }
 /* Filter horizontal end */
 
+/* Checkbox start */
+.catalog-filter-left .check__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.catalog-filter-left .check__box {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-color: var(--basic-white);
+    margin-left: -36px;
+    opacity: 0.4;
+}
+
+.catalog-filter-left .check {
+    padding-left: 36px;
+}
+
+.catalog-filter-left .option {
+    display: block;
+    margin-bottom: 17px;
+}
+
+/* Checked */
+.check__input:checked + .check__box {
+    background-image: url("../img/checkbox-on.svg");
+    width: 26px;
+    height: 23px;
+}
+
+/* Focused */
+.check__input:focus + .check__box {
+    outline: 5px solid tomato;
+}
+
+/* Disabled  */
+.check__input:disabled + .check__box {
+    opacity: 0.1;
+}
+
+.check__input:checked:disabled + .check__box {
+    opacity: 0.1;
+}
+
+
+/* Radio Button */
+.catalog-filter-left .radio__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.catalog-filter-left .radio__button {
+    cursor: pointer;
+    position: absolute;
+    margin-left: -36px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/radio-off.svg");
+    opacity: 0.4;
+}
+
+.radio__input:checked + .radio__button {
+    background-image: url("../img/radio-on.svg");
+}
+
+.catalog-filter-left .radio__option {
+    padding-left: 36px;
+    display: block;
+    margin-bottom: 15px;
+}
 
 /* Catalog items list start */
 .catalog-items {
