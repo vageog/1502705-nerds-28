@@ -18,8 +18,8 @@
                 <li><a href="#">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
                 <li>
-                    <a>Магазин</a>
-                  </li>
+                  <a>Магазин</a>
+                </li>
                 <li><a href="#">Контакты</a></li>
               </ul>
               <div class="navigation-basket">
@@ -36,7 +36,7 @@
     <main class="container-catalog container">
         <section class="catalog-filter-left">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form action="https://echo.htmlacademy.ru/courses" method="GET">
+            <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
                     <legend>Стоимость:</legend>
                     <div class="range-filter">
@@ -85,37 +85,37 @@
                     <ul>
                       <li>
                         <label class="check option">
-                          <input class="check__input" type="checkbox" checked>
+                          <input class="check__input" type="checkbox" checked name="slider">
                           <span class="check__box"></span>Слайдер
                         </label>
                       </li>
                       <li>
                         <label class="check option">
-                          <input class="check__input" type="checkbox">
+                          <input class="check__input" type="checkbox" name="advantages">
                           <span class="check__box"></span>Блок преимуществ
                         </label>
                       </li>
                       <li>
                         <label class="check option">
-                          <input class="check__input" type="checkbox" checked>
+                          <input class="check__input" type="checkbox" checked name="news">
                           <span class="check__box"></span>Новости
                         </label>
                       </li>
                       <li>
                         <label class="check option">
-                          <input class="check__input" type="checkbox">
+                          <input class="check__input" type="checkbox" name="gallery">
                           <span class="check__box"></span>Галерея
                         </label>
                       </li>
                       <li>
                         <label class="check option">
-                          <input class="check__input" type="checkbox">
+                          <input class="check__input" type="checkbox" name="basket">
                           <span class="check__box"></span>Корзина
                         </label>
                       </li>
                     </ul>
                 </fieldset>
-                <button type="button">Показать</button>
+                <button type="submit">Показать</button>
             </form>
         </section>
         <section class="catalog-filter-horizontal">
@@ -274,26 +274,24 @@
     </div>
     </footer>
 
-    <section class="contact-us-window">
-      <h2 class="visually-hidden">Напишите нам</h2>
+    <section class="modal contact-us-window">
+      <h2>Напишите нам</h2>
       <button type="button" class="close-button" aria-label="Закрыть окно обратной связи"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
       </button>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <fieldset>
-      <label>
-        Ваше имя: 
-        <input type="text" name="name" placeholder="Имя Фамилия">
-      </label>
-      <label>
-        Ваш email:
-        <input type="email" name="email" placeholder="email@example.com">
-      </label>
-      <label>
-        Текст письма:
-        <textarea name="text" id="contact-text" rows="5" placeholder="В свободной форме"></textarea>
-      </label>
-      <button type="submit" class="red button">Отправить</button>
-        </fieldset>  
+      <form class="contact-us-fields" action="https://echo.htmlacademy.ru/courses" method="post">
+          <label class="contact-us-name">
+            Ваше имя: 
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label class="contact-us-email">
+            Ваш email:
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+          <label class="contact-us-text">
+            Текст письма:
+            <textarea name="text" id="contact-text" rows="5" placeholder="В свободной форме"></textarea>
+          </label>
+          <button type="submit" class="red button">Отправить</button>
       </form>
     </section>
   </body>
