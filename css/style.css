@@ -362,7 +362,8 @@ span.tagline-one {
 }
 
 .features-item-text {
-    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 40px;
 }
 
 .features-item-picture {
@@ -521,13 +522,30 @@ span.tagline-one {
 
 /* Footer Start */
 /* Map and Badge start */
-.footer-map {
-    height: 440px;
+.main-footer .container-iframe {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
     margin-bottom: 68px;
+    margin-top: 80px;
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
     background-position: center;
+    height: 416px;
+}
+
+.main-footer iframe {
+    border: none;
+    background-color: var(--basic-white);
+}
+
+.footer-map {
+    /*  */
+    position: relative;
+    width: 1440px;
     margin: 0 auto;
+    padding: 0 10px;
     margin-bottom: 68px;
     margin-top: 80px;
 }
@@ -538,7 +556,7 @@ span.tagline-one {
 
 .footer-badge-container {
     top: 54px;
-    left: 10px;
+    left: 150px;
     position: absolute;
     background-color: var(--basic-white);
     width: 219px;
@@ -548,6 +566,7 @@ span.tagline-one {
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 47px;
+    z-index: 1;
 }
 
 .footer-badge-name {
@@ -700,6 +719,7 @@ span.tagline-one {
     padding-right: 99px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     display: none;
+    z-index: 1;
 }
 
 .modal-show {
