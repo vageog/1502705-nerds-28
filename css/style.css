@@ -726,6 +726,7 @@ span.tagline-one {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    animation: bounce 0.2s;
 }
 
 .contact-us-fields {
@@ -1360,3 +1361,23 @@ main.container-catalog {
     cursor: default; 
 }
 /* Catalog pagination end */
+
+/* Animation start */
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+/* Animation end */

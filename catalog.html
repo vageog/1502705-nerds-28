@@ -228,16 +228,14 @@
     <footer class="main-footer">
       <section>
         <h2 class="visually-hidden">Как найти нас</h2>
-        <div class="footer-map">
+        <div class="container-iframe">
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?clid=37245&ll=30.324447%2C59.938651&sll=37.586311%2C55.804482&sspn=0.102654%2C0.034951&utm_medium=mapframe&utm_source=maps&z=17.39" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQh7HeZPD" width="1440" height="416" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
           <div class="container">
             <div class="footer-badge-container">
               <span class="footer-badge-name">NЁRDS DESIGN STUDIO</span>
               <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
               <br><p class="footer-badge-number">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-              <button type="button" class="red button">Напишите нам</button>
-            </div>
-            <div class="footer-map-pin-container">
-              <img src="img/map-marker.png" width="231" height="190" alt="Мы тут">
+              <button type="button" class="red button contact-us-button">Напишите нам</button>
             </div>
           </div>
         </div>
@@ -278,7 +276,7 @@
       <h2>Напишите нам</h2>
       <button type="button" class="close-button" aria-label="Закрыть окно обратной связи"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
       </button>
-      <form class="contact-us-fields" action="https://echo.htmlacademy.ru/courses" method="post">
+      <form class="contact-us-fields" action="https://echo.htmlacademy.ru" method="post">
           <label class="contact-us-name">
             Ваше имя: 
             <input type="text" name="name" placeholder="Имя Фамилия">
@@ -294,5 +292,7 @@
           <button type="submit" class="red button">Отправить</button>
       </form>
     </section>
+
+  <script src="contact-us.js"></script>
   </body>
 </html>

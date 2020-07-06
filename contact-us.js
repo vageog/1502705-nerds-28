@@ -33,7 +33,9 @@ contactClose.addEventListener("click", function (evt) {
 });
 
 contactForm.addEventListener("submit", function (evt) {
+    if (!contactEmail.value) {
     evt.preventDefault();
+    }
 });
 
 window.addEventListener("keydown", function (evt) {
