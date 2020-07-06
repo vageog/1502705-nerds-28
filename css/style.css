@@ -688,8 +688,8 @@ span.tagline-one {
 }
 
 .contact-us-window {
-    bottom: 180px;
-    top: auto;
+    bottom: auto;
+    top: 10%;
     left: 0;
     right: 0;
     width: 960px;
@@ -699,10 +699,13 @@ span.tagline-one {
     padding-bottom: 84px;
     padding-right: 99px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.modal-show {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    display: none;
 }
 
 .contact-us-fields {
@@ -712,13 +715,17 @@ span.tagline-one {
 }
 
 .contact-us-name {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 360px;
 }
 
 .contact-us-email {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 360px; 
+}
+
+.contact-us-window label {
+    grid-template-columns: 360px;
 }
 
 .contact-us-text {
@@ -736,7 +743,6 @@ span.tagline-one {
     padding-top: 16px;
     padding-right: 14px;
     padding-bottom: 16px;
-    flex-basis: 100%;
 }
 
 .contact-us-email input {
@@ -744,7 +750,6 @@ span.tagline-one {
     padding-top: 16px;
     padding-right: 14px;
     padding-bottom: 16px;
-    flex-basis: 100%;
 }
 
 .contact-us-text textarea {
@@ -761,7 +766,9 @@ span.tagline-one {
 }
 
 .close-button {
-    margin: auto 0;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-right: 0;
     width: 21px;
     height: 21px;
     vertical-align: middle;
@@ -1034,7 +1041,7 @@ main.container-catalog {
 }
 
 .catalog-filter-horizontal button {
-    background-color: var(--basic-white);
+    background: none;
     font: inherit;
     text-align: center;
     color: var(--basic-black-opacity-03);
