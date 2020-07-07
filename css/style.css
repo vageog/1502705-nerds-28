@@ -1363,7 +1363,7 @@ span.tagline-one {
 }
 /* Catalog pagination end */
 
-/* Animation start */
+/* Animation */
 @keyframes bounce {
     0% {
       transform: translateY(-2000px);
@@ -1381,4 +1381,4 @@ span.tagline-one {
       transform: translateY(0);
     }
   }
-/* Animation end */
+/* Animation */
